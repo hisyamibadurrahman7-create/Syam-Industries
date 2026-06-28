@@ -1,21 +1,30 @@
-function showMessage(){
+document
+.getElementById("start")
+.onclick=function(){
 
-document.getElementById("message").innerHTML=`
+document.body.style.opacity="0";
 
-<h2>❤️</h2>
+setTimeout(function(){
 
-<p>
+document.body.innerHTML=`
 
-Aku berharap di umurmu yang ke-18,
-kamu selalu bahagia.
+<div style="
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-size:35px;
+font-family:Arial;
+background:#111;
+color:white;
+">
 
-Terima kasih telah menjadi bagian
-dari hidupku.
+Loading Memories...
 
-Happy Birthday.
-
-</p>
+</div>
 
 `;
+
+},800);
 
 }
