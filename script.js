@@ -1,30 +1,55 @@
-document
-.getElementById("start")
-.onclick=function(){
+const button = document.getElementById("start");
 
-document.body.style.opacity="0";
+button.addEventListener("click", () => {
 
-setTimeout(function(){
+    document.body.innerHTML = `
 
-document.body.innerHTML=`
+    <div class="loading">
 
-<div style="
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-font-size:35px;
-font-family:Arial;
-background:#111;
-color:white;
-">
+        <h1>Loading Memories...</h1>
 
-Loading Memories...
+        <div class="bar">
 
-</div>
+            <div class="progress"></div>
 
-`;
+        </div>
 
-},800);
+        <p id="percent">0%</p>
 
-}
+    </div>
+
+    `;
+
+    let value = 0;
+
+    let interval = setInterval(() => {
+
+        value++;
+
+        document.querySelector(".progress").style.width = value + "%";
+
+        document.getElementById("percent").innerHTML = value + "%";
+
+        if(value >=100){
+
+            clearInterval(interval);
+
+            document.body.innerHTML=`
+
+            <div class="welcome">
+
+            <h1>Happy Birthday ❤️</h1>
+
+            <h2>Welcome, Raina</h2>
+
+            <p>Let's begin our journey...</p>
+
+            </div>
+
+            `;
+
+        }
+
+    },40);
+
+});
