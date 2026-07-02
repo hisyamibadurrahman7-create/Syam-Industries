@@ -93,3 +93,52 @@ button:hover{
         transform:translateY(0);
     }
 }
+.chapter{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+    text-align:center;
+
+    animation:fadeIn 1.2s;
+
+    padding:40px;
+
+}
+
+.chapter-number{
+
+    letter-spacing:5px;
+
+    color:#ffb6c1;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+
+}
+
+.chapter h1{
+
+    font-size:52px;
+
+    margin-bottom:20px;
+
+}
+
+.chapter p{
+
+    max-width:500px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
