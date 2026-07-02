@@ -57,6 +57,39 @@ Continue →
 
 document.getElementById("continue").onclick = showChapter;
 
+function showChapter(){
+
+    document.body.innerHTML = `
+
+    <div class="chapter">
+
+        <span class="chapter-number">
+            Chapter I
+        </span>
+
+        <h1>
+            The Beginning
+        </h1>
+
+        <p>
+            Semua cerita indah
+            selalu memiliki awal.
+        </p>
+
+        <button id="startStory">
+            Start →
+        </button>
+
+    </div>
+
+    `;
+
+    document
+    .getElementById("startStory")
+    .onclick = showMemory;
+
+}
+
         }
 
     },40);
