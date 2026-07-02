@@ -38,15 +38,24 @@ button.addEventListener("click", () => {
 
             <div class="welcome">
 
-            <h1>Happy Birthday ❤️</h1>
+<h1>Happy Birthday ❤️</h1>
 
-            <h2>Welcome, Raina</h2>
+<h2>Welcome, Raina</h2>
 
-            <p>Let's begin our journey...</p>
+<p>
+Aku membuat perjalanan kecil ini khusus untukmu.
+Semoga kamu menikmatinya sampai akhir.
+</p>
 
-            </div>
+<button id="continue">
+Continue →
+</button>
 
-            `;
+</div>
+
+`;
+
+document.getElementById("continue").onclick = showChapter;
 
         }
 
